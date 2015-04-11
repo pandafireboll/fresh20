@@ -18,6 +18,6 @@ module.exports = {
     uri:    process.env.MONGOLAB_URI ||
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://localhost/fresh2o'
+            'mongodb://fresh2o:fresh2o@ds061701.mongolab.com:61701/spaceapps'
   }
 };

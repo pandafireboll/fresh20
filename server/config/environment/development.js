@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/fresh2o-dev'
+    uri: 'mongodb://fresh2o:fresh2o@ds061701.mongolab.com:61701/spaceapps'
   },
 
   seedDB: true

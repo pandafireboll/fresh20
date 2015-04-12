@@ -1,0 +1,14 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="col-md-12">
+	<ul class="list-group">
+    <li class="list-group-item" ng-repeat="types in typesofaccess">
+      	<div class="text-center">
+        	<a ui-sref="{{types.url}}"><strong>{{types.name}}</strong></a><br>
+    	</div>
+    </li>
+  </ul>
+</div>
+
+
+

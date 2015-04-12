@@ -5,8 +5,20 @@ var mongoose = require('mongoose'),
 
 var ThingSchema = new Schema({
   name: String,
-  info: String,
-  active: Boolean
+  // user: Number, // 1- technical 2, non-technical
+  info: String, // description?
+  type: String, // resevoir, 
+  // active: Boolean, // keep?
+  location: {
+  	latitude: Number,
+  	longitude: Number
+  }
+  // frequency: Number, // modify, this is a little up in the air
+  // quality: {
+  // 	color: String,
+  // 	smell: String,
+  // 	drinkable: Boolean
+  // }
 });
 
 module.exports = mongoose.model('Thing', ThingSchema);

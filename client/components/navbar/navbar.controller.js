@@ -5,6 +5,18 @@ angular.module('fresh2oApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },{
+      'title': 'User Type',
+      'link': '/userType'
+    }, {
+      'title': 'Average',
+      'link': '/average'
+    }, {
+      'title': 'Technical',
+      'link': '/technical'
+    }, {
+      'title': 'Typeofaccess',
+      'link': '/typeofaccess'
     }];
 
     $scope.isCollapsed = true;

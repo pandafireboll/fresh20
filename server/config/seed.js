@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Typeofaccess = require('../api/typeofaccess/typeofaccess.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -46,4 +47,23 @@ User.find({}).remove(function() {
       console.log('finished populating users');
     }
   );
+});
+
+Typeofaccess.find({}).remove(function() {
+  Typeofaccess.create({
+    name : 'Well',
+    url : 'http://www.google.com'
+  }, {
+    name : 'Sink/Faucet',
+    url : ''
+  },{
+    name : 'River/Stream',
+    url : 'http://www.google.com'
+  },{
+    name : 'Lake',
+    url : 'http://www.google.com'
+  },{
+    name : 'Resevoir',
+    url : 'http://www.google.com'
+  });
 });

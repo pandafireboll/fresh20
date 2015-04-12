@@ -7,6 +7,20 @@
     margin-top: -20px;
 }
 
+#mapbanner {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index:1;
+  color:#ffffff;
+  text-align: center;
+  width:100%;
+  position:absolute;
+  margin-top: 400px;
+}
+
+iframe {
+  margin-top: -20px;
+}
+
 #banner h1 {
     font-size: 60px;
     line-height: 1;

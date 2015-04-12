@@ -25,5 +25,11 @@ angular.module('fresh2oApp')
         url: '/technical',
         templateUrl: 'app/partials/technical.html',
         controller: 'MainCtrl'
-      });
+      })
+      // .state('typeofaccess', {
+      //   url: '/typeofaccess',
+      //   templateUrl: 'app/partials/typeofaccess/typeofaccess.html',
+      //   controller: 'TypeofaccessCtrl'
+      // })
+      ;
   });

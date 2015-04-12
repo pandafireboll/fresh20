@@ -22,20 +22,12 @@ angular.module('fresh2oApp')
         },
         zoom: 10,
         markers: [
-          {id:0, latitude: 33.71, longitude: -117.8, onClick: showBox},
-          {id:1, latitude: 33.64, longitude: -117.9, onClick: showBox},
-          {id:2, latitude: 33.68, longitude: -117.8471722, onClick: showBox},
-          {id:3, latitude: 33.70,longitude: -117.9, onClick: showBox},
-          {id:4, latitude: 33.697898,longitude: -117.8471724, onClick: showBox}]
+          {id:0, latitude: 33.71, longitude: -117.8},
+          {id:1, latitude: 33.64, longitude: -117.9},
+          {id:2, latitude: 33.68, longitude: -117.8471722},
+          {id:3, latitude: 33.70,longitude: -117.9},
+          {id:4, latitude: 33.697898,longitude: -117.8471724}]
       };
-      console.log($scope.map.markers[0].id);
-
-      function showBox (){
-        console.log("You clicked me!");
-        //var infowindow = new google.maps.InfoWindow();
-        //console.log(infowindow);
-        //infowindow.open(map, $scope.map.markers[0]);
-      }
 
       getLocation.location().then(function(value){
         $scope.map.center = value;

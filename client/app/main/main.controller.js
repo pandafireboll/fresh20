@@ -24,8 +24,9 @@ angular.module('fresh2oApp')
       $scope.inputs = [{field:'Name',type:0},{field:'Info',type:1},{field:'Type',type:2}];
 
       $scope.result = [];
+      $scope.result[3]= {};
       $scope.submitInput = function(){
-        $http.post('/api/things',{"name": $scope.result[0], "user": 1, "info": $scope.result[1], "type": $scope.result[2], "location": { "latitude": $scope.result[3], "longitude": $scope.result[4]}});
+        $http.post('/api/things',{"name": $scope.result[0], "user": 1, "info": $scope.result[1], "type": $scope.result[2], "location": { "latitude": $scope.result[3].latitude, "longitude": $scope.result[3].longitude}});
       };
 
   });

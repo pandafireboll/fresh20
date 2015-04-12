@@ -18,18 +18,12 @@ angular.module('fresh2oApp')
       .state('average', {
         url: '/average',
         templateUrl: 'app/partials/average.html',
-        controller: 'MainCtrl'
+        controller: 'InputCtrl'
       })
       //added route for technical.html submission form
       .state('technical', {
         url: '/technical',
         templateUrl: 'app/partials/technical.html',
-        controller: 'MainCtrl'
-      })
-      // .state('typeofaccess', {
-      //   url: '/typeofaccess',
-      //   templateUrl: 'app/partials/typeofaccess/typeofaccess.html',
-      //   controller: 'TypeofaccessCtrl'
-      // })
-      ;
+        controller: 'InputCtrl'
+      });
   });

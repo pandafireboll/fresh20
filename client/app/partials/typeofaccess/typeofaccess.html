@@ -4,7 +4,7 @@
 	<ul class="list-group">
     <li class="list-group-item" ng-repeat="types in typesofaccess">
       	<div class="text-center">
-        	<a ui-sref="{{types.url}}"><strong>{{types.name}}</strong></a><br>
+        	<a ui-sref="average({type: '{{types.name}}'})"><strong>{{types.name}}</strong></a><br>
     	</div>
     </li>
   </ul>

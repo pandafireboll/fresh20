@@ -20,13 +20,15 @@ angular.module('fresh2oApp')
       $http.delete('/api/things/' + thing._id);
     };
   })
-  .controller('InputCtrl', function ($scope, $http) {
-      $scope.inputs = [{field:'Name',type:0},{field:'Info',type:1},{field:'Type',type:2}];
+  .controller('InputCtrl', function ($scope, $http, $state, $stateParams) {
+      $scope.inputs = [{field:'Name',type:0},{field:'Info',type:1}];
 
+      console.log($stateParams);
+      console.log($state);
       $scope.result = [];
       $scope.result[3]= {};
       $scope.submitInput = function(){
-        $http.post('/api/things',{"name": $scope.result[0], "user": 1, "info": $scope.result[1], "type": $scope.result[2], "location": { "latitude": $scope.result[3].latitude, "longitude": $scope.result[3].longitude}});
+        $http.post('/api/things',{"name": $scope.result[0], "user": 1, "info": $scope.result[1], "type": $stateParams.type, "location": { "latitude": $scope.result[3].latitude, "longitude": $scope.result[3].longitude}});
       };
 
   });

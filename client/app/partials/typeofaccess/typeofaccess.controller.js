@@ -5,8 +5,6 @@ angular.module('fresh2oApp')
     $scope.typesofaccess = [];
 
     $http.get('/api/typeofaccess').success(function(typesofaccess) {
-      console.log('hello');
       $scope.typesofaccess = typesofaccess;
     });
-    console.log('end');
   });

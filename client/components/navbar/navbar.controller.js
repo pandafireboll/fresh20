@@ -8,15 +8,6 @@ angular.module('fresh2oApp')
     },{
       'title': 'User Type',
       'link': '/userType'
-    }, {
-      'title': 'Average',
-      'link': '/average'
-    }, {
-      'title': 'Technical',
-      'link': '/technical'
-    }, {
-      'title': 'Type of Access',
-      'link': '/typeofaccess'
     }];
 
     $scope.isCollapsed = true;

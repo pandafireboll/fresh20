@@ -20,7 +20,7 @@ angular.module('fresh2oApp')
         options: {
           minZoom: 2
         },
-        zoom: 10,
+        zoom: 13,
         markers: [
           {id:0, latitude: 33.71, longitude: -117.8},
           {id:1, latitude: 33.64, longitude: -117.9},

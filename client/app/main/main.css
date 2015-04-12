@@ -7,6 +7,12 @@
     margin-top: -20px;
 }
 
+.banner-container {
+  position: absolute;
+  height: 480px;
+  width: 100%;
+}
+
 #mapbanner {
   background-color: rgba(0, 0, 0, 0.5);
   z-index:1;
@@ -14,7 +20,7 @@
   text-align: center;
   width:100%;
   position:absolute;
-  margin-top: 400px;
+  bottom:0;
 }
 
 iframe {

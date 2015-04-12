@@ -16,7 +16,7 @@ angular.module('fresh2oApp')
       })
       //added route for average.html submission form
       .state('average', {
-        url: '/average',
+        url: '/average/{type}',
         templateUrl: 'app/partials/average.html',
         controller: 'InputCtrl'
       })

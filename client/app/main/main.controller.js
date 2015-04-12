@@ -20,9 +20,11 @@ angular.module('fresh2oApp')
       $http.delete('/api/things/' + thing._id);
     };
   })
-  .controller('InputCtrl', function ($scope, $http) {
+  .controller('InputCtrl', function ($scope, $http, $state, $stateParams) {
       $scope.inputs = [{field:'Name',type:0},{field:'Info',type:1},{field:'Type',type:2}];
 
+      console.log($stateParams);
+      console.log($state);
       $scope.result = [];
       $scope.result[3]= {};
       $scope.submitInput = function(){

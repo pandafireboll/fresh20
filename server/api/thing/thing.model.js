@@ -8,17 +8,17 @@ var ThingSchema = new Schema({
   user: Number, // 1- technical 2, non-technical
   info: String, // description?
   type: String, // resevoir, 
-  active: Boolean, // keep?
+  // active: Boolean, // keep?
   location: {
   	latitude: String,
   	longitude: String
-  },
-  frequency: Number, // modify, this is a little up in the air
-  quality: {
-  	color: String,
-  	smell: String,
-  	drinkable: Boolean
   }
+  // frequency: Number, // modify, this is a little up in the air
+  // quality: {
+  // 	color: String,
+  // 	smell: String,
+  // 	drinkable: Boolean
+  // }
 });
 
 module.exports = mongoose.model('Thing', ThingSchema);

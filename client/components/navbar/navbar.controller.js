@@ -15,7 +15,7 @@ angular.module('fresh2oApp')
       'title': 'Technical',
       'link': '/technical'
     }, {
-      'title': 'Typeofaccess',
+      'title': 'Type of Access',
       'link': '/typeofaccess'
     }];
 

@@ -5,13 +5,13 @@ var mongoose = require('mongoose'),
 
 var ThingSchema = new Schema({
   name: String,
-  user: Number, // 1- technical 2, non-technical
+  // user: Number, // 1- technical 2, non-technical
   info: String, // description?
   type: String, // resevoir, 
   // active: Boolean, // keep?
   location: {
-  	latitude: String,
-  	longitude: String
+  	latitude: Number,
+  	longitude: Number
   }
   // frequency: Number, // modify, this is a little up in the air
   // quality: {

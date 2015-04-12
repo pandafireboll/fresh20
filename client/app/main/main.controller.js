@@ -21,11 +21,11 @@ angular.module('fresh2oApp')
     };
   })
   .controller('InputCtrl', function ($scope, $http) {
-      $scope.inputs = [{field:'Name',type:0},{field:'User',type:1},{field:'Info',type:2},{field:'Type',type:3},{field:'Location',type:4}];
+      $scope.inputs = [{field:'Name',type:0},{field:'Info',type:1},{field:'Type',type:2}];
 
       $scope.result = [];
       $scope.submitInput = function(){
-        $http.post('/api/things',{"name": $scope.result[0], "user": $scope.result[1], "info": $scope.result[2], "type": $scope.result[3], "location": { "latitude": "lol", "longitude": $scope.result[4]}});
+        $http.post('/api/things',{"name": $scope.result[0], "user": 1, "info": $scope.result[1], "type": $scope.result[2], "location": { "latitude": $scope.result[3], "longitude": $scope.result[4]}});
       };
 
   });

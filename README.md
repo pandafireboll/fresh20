@@ -6,7 +6,7 @@ NASA Space App Hackathon
 
   - __Creative__: Lauren Tung, Erin Hubbard, Denise Hewes
   - __Design__: Manlo Ngai
-  - __Development__: Kai Hsia, Fox Pan, Kenneth Emanuel, Alex Ziebol
+  - __Development__: Kai Hsia, Yu Pan, Kenneth Emanuel, Alex Ziebol
 
 ## Table of Contents
 
